@@ -11,7 +11,7 @@ import {
 })
 export class HighlightDirective implements OnChanges {
   @Input() highlightText: string;
-  @Input() highlightColor: string = 'yellow';
+  @Input('highlight') highlightColor: string = 'yellow';
   originalHTML = '';
 
   constructor(private el: ElementRef) {}
